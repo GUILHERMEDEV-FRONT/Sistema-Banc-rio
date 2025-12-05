@@ -1,0 +1,74 @@
+Apresentação do Projeto
+Sistema Bancário em Node.js (CLI)
+
+Este projeto é um sistema bancário executado via terminal, desenvolvido com o objetivo de praticar conceitos fundamentais de backend utilizando Node.js.
+A aplicação permite criar contas, consultar saldo, realizar depósitos, efetuar saques e validar operações com persistência local em arquivos JSON.
+
+Funcionalidades
+
+Criar conta
+Gera um arquivo JSON para cada usuário com saldo inicial.
+
+Consultar saldo
+Exibe o saldo atual da conta indicada.
+
+Depositar
+Solicita o valor e atualiza o saldo no arquivo da conta.
+
+Sacar
+Verifica saldo disponível e realiza o débito.
+
+Validação de contas
+Impede operações em contas inexistentes.
+
+Persistência de dados
+Utiliza o módulo fs para leitura e escrita de arquivos.
+
+Tecnologias Utilizadas
+
+Node.js
+
+Inquirer – interação via terminal
+
+Chalk – estilização de mensagens
+
+FS (File System) – manipulação de arquivos JSON
+
+Estrutura do Projeto
+.
+├── accounts/
+│   └── <nome-da-conta>.json
+├── index.js
+└── package.json
+
+
+Cada conta é salva individualmente em um arquivo dentro da pasta accounts/.
+
+Como Executar
+
+Instale as dependências:
+
+npm install
+
+
+Execute o projeto:
+
+node index.js
+
+
+Utilize o menu interativo para navegar entre as opções.
+
+Objetivo do Projeto
+
+Este sistema foi desenvolvido com fins educacionais, para treinar:
+
+organização de funções
+
+manipulação de dados
+
+modularização de lógica
+
+interação com usuário via CLI
+
+leitura e escrita de arquivos em Node.js
+
